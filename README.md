@@ -1,46 +1,69 @@
-# Getting Started with Create React App
+# Tutorial code of @react-three/fiber following a three.js tutorial book
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+I wanted to learn @react-three/fiber, but as it was adviced to learn three.js first, I decided to follow a three.js book and use @react-three/fiber to implements the example / exercices code.
 
-## Available Scripts
+## The environment
 
-In the project directory, you can run:
+### Nodejs through nvm
 
-### `npm start`
+First of all, you should have a recent version of nodejs and npm. I personnaly use nvm for windows.
+https://github.com/coreybutler/nvm-windows
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### create-react-app
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+To ease the development and because it is certainly the most specialised react basic environment, I used it. Simply use the following command
 
-### `npm test`
+> npx create-react-app react-three --template typescript
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+You will be asked to install create-react-app, say yes
 
-### `npm run build`
+#### A word on typescript
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+I would say that when you develop wiht react, typescript is not the most useful language and you could stay with javascript. But finally it is more and more used, and for future development, it is always a good point to have at least some basic knowledge about it.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## The development tools
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### VSCode
 
-### `npm run eject`
+I have decided to use vscode, I'm a big fan of this editor, for js development. I would recommend to use it.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### old notes to clean
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+use create-react-app
+why ?
+it is the most common configuration for a react application with a server to test
+url : https://create-react-app.dev/
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+command :
+npx create-react-app react-three --template typescript
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+install react three fiber
+npm install three @react-three/fiber
 
-## Learn More
+To start the project, go in the folder and check if the following command works :
+npm start
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+add prettier
+https://medium.com/technical-credit/using-prettier-with-vs-code-and-create-react-app-67c2449b9d08
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+If you use a .prettierrc, be careful taht each modification, you have to restart vscode
+To have the format on save, do not forget to set the default formatter
+
+I would advice to modify the .prettierrc step by step in accordance with the team.
+Most of the time, the rule is juste a preference. There is no reason to take one or another.
+But having a code styling defined for all the projects are really important.
+
+if you use endofline to lf, update the configuration in vscode :
+Settings > Text Editor > Files > Eol -> \n (lf)
+
+So the environment is ready, now I want to have the possibility to have several pages
+one for each chapter I will work on.
+So let's use react-router :
+
+npm install 'react-router-dom'
+
+https://ui.dev/react-router-tutorial
+
+Creation of the home page where all chapters are listed
+
+ok, stop, now git it.

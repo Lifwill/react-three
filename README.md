@@ -27,6 +27,13 @@ I would say that when you develop wiht react, typescript is not the most useful 
 
 I have decided to use vscode, I'm a big fan of this editor, for js development. I would recommend to use it.
 
+## Tips and issues
+
+### Activate shadows and canvas modification
+
+To activate shadows on the scene, you should add the shadows property to the canvas. But Be carefull that the page must be refreshed if you want to add or remove the shadows in the property.
+Later I realized that it should be done each time you modify a paremeter of the canvas
+
 ### old notes to clean
 
 use create-react-app
